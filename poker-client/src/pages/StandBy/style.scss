@@ -1,0 +1,47 @@
+.stand-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    &-field {
+        background-color: rgb(50, 50, 50);
+        border-radius: 5px;
+        padding: 20px;
+        color: white;
+
+        .heading,
+        .content {
+            // width: 150px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .actions {
+            justify-content: space-around;
+            margin-top: 100px;
+
+            .action-btn {
+                padding: 10px 20px;
+                background-color: rgb(255, 128, 0);
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .action-btn-disable {
+                padding: 10px 20px;
+                background-color: rgb(255, 128, 0);
+                opacity: 0.5;
+
+                &:hover {
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+}

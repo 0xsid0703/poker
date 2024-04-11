@@ -1,0 +1,35 @@
+.create-room {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    .create-room-field {
+        background-color: rgb(50, 50, 50);
+        border-radius: 5px;
+        padding: 50px;
+
+        .room-name-input {
+            input {
+                background-color: rgb(50, 50, 50);
+                outline: none;
+                border: none;
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 30px;
+                color: white;
+            }
+        }
+
+        .create-btn {
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            background-color: rgb(255, 128, 0);
+            border-radius: 5px;
+        }
+    }
+}

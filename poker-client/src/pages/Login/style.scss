@@ -1,0 +1,40 @@
+.login {
+    background-color: rgb(18, 19, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .login-field {
+        background-color: rgb(30, 30, 30);
+
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 50px;
+
+        .username-field {
+            margin-bottom: 30px;
+
+            .username {
+                input {
+                    color: white;
+                    outline: none;
+                    border: none;
+                    font-size: 20px;
+                    padding: 10px;
+                    text-align: center;
+                    background-color: rgb(30, 30, 30);
+                }
+            }
+        }
+
+        .login-btn {
+            padding: 10px 30px;
+            background-color: rgba(235, 139, 44, 0.527);
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+}

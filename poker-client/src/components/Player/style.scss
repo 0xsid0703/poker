@@ -1,0 +1,31 @@
+.player {
+    width: 100px;
+    position: relative;
+
+    .avatar {
+        img {
+            border-radius: 50%;
+            border: 5px solid white
+        }
+    }
+
+    .detail {
+        position: absolute;
+        top: 80px;
+        width: 90px;
+        color: white;
+        left: 2px;
+        border: 3px solid white;
+        border-radius: 10px 10px 25px 25px;
+        background-color: rgb(48, 38, 28);
+
+        .username,
+        .balance {
+            padding: 5px 10px;
+        }
+
+        hr {
+            border: 1px solid rgb(30, 36, 54);
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.find-room {
+    // position: relative;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+
+    .data-grid {
+        margin-top: 30px;
+        // border: 1px solid white;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 5px;
+        color: rgb(150, 150, 150);
+
+        .data-header {
+            background-color: rgb(30, 30, 30) !important;
+
+            &:hover {
+                background-color: rgb(30, 30, 30) !important;
+
+            }
+        }
+
+        .data-row {
+            margin: 20px 30px;
+            padding: 20px 50px;
+            border-radius: 10px;
+            background-color: rgb(50, 50, 50);
+            justify-content: space-between;
+
+            .id,
+            .players {
+                width: 100px;
+            }
+
+            .name,
+            .creator {
+                width: 300px;
+            }
+
+            .action {
+                width: 50px;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: rgb(70, 70, 70);
+            }
+        }
+    }
+
+    .create-room {
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+}

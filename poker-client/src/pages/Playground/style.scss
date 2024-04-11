@@ -1,0 +1,341 @@
+.playground {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 83px);
+    background: url('../../assets/image/playground.png');
+    background-size: cover;
+    background-position: center;
+
+    .player-1,
+    .player-2,
+    .player-3,
+    .player-4,
+    .player-5,
+    .player-6,
+    .player-7,
+    .player-8,
+    .player-9,
+    .player-10,
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6,
+    .card-7,
+    .card-8,
+    .card-9,
+    .card-10 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .blind-stone {
+        position: absolute;
+        height: 100px;
+        right: -30px;
+        display: flex;
+        color: blue;
+
+        .content {
+            font-size: 10px;
+            padding: 2px;
+            border-radius: 50%;
+            background-color: yellow;
+
+            align-self: center;
+        }
+    }
+
+    .bet-amount {
+        position: absolute;
+        height: 100px;
+        left: -35px;
+        display: flex;
+        color: white;
+
+        .content {
+            align-self: center;
+            background-color: red;
+            padding: 4px;
+            border-radius: 50%;
+            // width: 25px;
+            text-align: center;
+        }
+    }
+
+    .winner-text {
+        position: absolute;
+        color: white;
+        // z-index: 3;
+        top: -20px;
+        text-align: center;
+        width: 200%;
+        left: -50%;
+
+    }
+
+    .player-1 {
+        left: 50%;
+        top: 85%;
+    }
+
+    .card-1 {
+        left: 50%;
+        top: 70%;
+    }
+
+    .btn-ctrl-bar-1 {
+        left: 50%;
+        top: 85%;
+    }
+
+    .player-2 {
+        left: 50%;
+        top: 10%;
+    }
+
+    .card-2 {
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(180deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(180deg);
+        }
+    }
+
+    .player-3 {
+        left: 80%;
+        top: 20%;
+    }
+
+    .card-3 {
+        left: 72%;
+        top: 30%;
+        transform: rotate(-135deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(135deg);
+        }
+    }
+
+    .player-4 {
+        left: 20%;
+        top: 75%;
+    }
+
+    .card-4 {
+        left: 20%;
+        top: 60%;
+        transform: rotate(45deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(-45deg);
+        }
+    }
+
+    .player-5 {
+        left: 65%;
+        top: 85%;
+    }
+
+    .card-5 {
+        left: 65%;
+        top: 70%;
+    }
+
+    .player-6 {
+        left: 35%;
+        top: 10%;
+    }
+
+    .card-6 {
+        left: 35%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(180deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(180deg);
+        }
+    }
+
+    .player-7 {
+        left: 65%;
+        top: 10%;
+    }
+
+    .card-7 {
+        left: 65%;
+        top: 30%;
+        transform: translate(-50%, -50%) rotate(180deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(180deg);
+        }
+    }
+
+    .player-8 {
+        left: 35%;
+        top: 85%;
+    }
+
+    .card-8 {
+        left: 35%;
+        top: 70%;
+    }
+
+    .player-9 {
+        left: 80%;
+        top: 75%;
+    }
+
+    .card-9 {
+        left: 72%;
+        top: 60%;
+        transform: rotate(-45deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(45deg);
+        }
+    }
+
+    .player-10 {
+        left: 20%;
+        top: 20%;
+    }
+
+    .card-10 {
+        left: 20%;
+        top: 30%;
+        transform: rotate(135deg);
+
+        .bet-amount,
+        .blind-stone {
+            transform: rotate(-135deg);
+        }
+    }
+
+
+    .background-cards {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+
+        &-item {
+            margin: 0px 5px;
+        }
+
+        .pot-field {
+            display: flex;
+            position: absolute;
+            right: -100px;
+            height: 100px;
+            color: white;
+
+
+            .content {
+                align-self: center;
+            }
+        }
+    }
+
+    .card-item {
+        margin: 5px;
+    }
+
+    .busted-yes {
+        opacity: 0.2;
+    }
+
+    .btn-ctrl-bar {
+        position: absolute;
+        top: 80px;
+        left: 210px;
+        // transform: translate(110%, 50%);        
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+
+
+
+        .btn-ctrls {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .btn-ctrl {
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: white;
+            white-space: nowrap;
+            .tooltiptext {
+                visibility: hidden;
+                width: 80px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                bottom: 100%;
+                left: calc(50% + 20px);
+                margin-left: -60px;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .tooltiptext {
+
+                    visibility: visible;
+                }
+            }
+        }
+
+        .react-numeric-input {
+            input {
+                width: 130px;
+            }
+        }
+    }
+
+    .btn-ctrl-bar-disable {
+        opacity: 0.3;
+
+        .btn-ctrl {
+            cursor: not-allowed;
+        }
+    }
+
+    .logs {
+        position: absolute;
+        bottom: 10px;
+        padding: 5px;
+        right: 10px;
+        width: 300px;
+        height: 150px;
+        overflow-x: auto;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 18px;
+        div {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
